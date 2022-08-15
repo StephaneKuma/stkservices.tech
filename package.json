@@ -7,6 +7,12 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.6"
+    "node-sass": "^7.0.1",
+    "nuxt": "3.0.0-rc.6",
+    "sass-loader": "^13.0.2"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^1.0.6",
+    "@nuxtjs/tailwindcss": "^5.3.1"
   }
 }
