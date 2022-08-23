@@ -1,7 +1,10 @@
 <template>
-    <div class="scroll-smooth min-h-screen">
+    <div class="scroll-smooth min-h-screen bg-gray-100">
         <Header />
-        <slot />
+
+        <main>
+            <slot />
+        </main>
 
         <Footer />
     </div>

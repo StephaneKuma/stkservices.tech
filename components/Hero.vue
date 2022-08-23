@@ -17,10 +17,12 @@
                     Reach the fastest growing companies.
                 </p>
                 <div class="mt-16">
-                    <Button link="contact" linkTitle="Embauchez-nous" />
+                    <div class="flex justify-start">
+                        <Button :isLink="true" link="contact" linkTitle="Embauchez-nous" />
+                    </div>
                 </div>
             </div>
-            <div class="basis-1/2 overflow-hidden relative hidden md:block">
+            <div class="basis-1/2 overflow-hidden relative hidden md:flex justify-center items-center">
                 <img src="/hero.gif" alt="Stéphane Kuma" class="object-cover h-fit">
             </div>
         </div>

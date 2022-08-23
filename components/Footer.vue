@@ -4,18 +4,18 @@
             <span>Tous droits réservés @ stkservices 2022</span>
         </div>
         <div class="lg:px-24 px-12 py-20">
-            <div class="sm:flex block justify-between items-center">
-                <div class="md:w-1/5 sm:w-1/3">
+            <div class="lg:grid lg:grid-cols-4 lg:justify-center lg:items-start md:grid md:grid-cols-2 md:gap-8 md:justify-center sm:items-start">
+                <div class="flex flex-col justify-center items-center">
                     <NuxtLink to="/">
                         <img src="logo.svg" alt="STK SERVICES" class="h-14 sm:h-20">
                     </NuxtLink>
 
-                    <p class="text-justify mt-4">
+                    <p class="text-center mt-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repellat, alias cumque debitis
                         atque aspernatur reiciendis placeat tenetur vitae fugiat.
                     </p>
                 </div>
-                <div class="md:w-1/5 sm:w-1/3">
+                <div class="flex flex-col justify-center items-center">
                     <h4 class="text-2xl mt-6 font-semibold capitalize">Liens rapides</h4>
 
                     <ul class="mt-4 space-y-3">
@@ -36,7 +36,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="md:w-1/5 sm:w-1/3">
+                <div class="flex flex-col justify-center items-center">
                     <h4 class="text-2xl mt-6 font-semibold capitalize">Derniers Travaux</h4>
 
                     <ul class="mt-4 space-y-3">
@@ -57,7 +57,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="md:w-1/5 sm:w-1/3">
+                <div class="flex flex-col justify-center items-center">
                     <h4 class="text-2xl mt-6 font-semibold capitalize">Newsletter</h4>
 
                     <form action="#" class="mt-4">
@@ -65,7 +65,9 @@
                             <input type="email" name="email" id="email" placeholder="Entrer votre email"> <br>
                         </div>
 
-                        <Button linkTitle="S'abonner" />
+                        <div class="flex lg:justify-start sm:justify-center">
+                            <Button :isLink="false" linkTitle="S'abonner" />
+                        </div>
                     </form>
                 </div>
             </div>
