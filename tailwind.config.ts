@@ -1,5 +1,7 @@
 import { Config } from "tailwindcss";
 
+import plugin from 'tailwindcss/plugin';
+
 export default <Config>{
   content: [],
   theme: {
@@ -16,5 +18,9 @@ export default <Config>{
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addComponents, addUtilities, theme }) {
+      // addUtilities({'.-z-1': 'z-index:-1'})
+    })
+  ],
 };
